@@ -1,5 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import Hello from './comps/Hello';
+
 
 function App() {
   return (
@@ -9,17 +11,11 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <Hello />
     </div>
   );
 }
 
+// App 이라는 함수를 다른 곳에서 import 할 수 있도록 화는 선언문
 export default App;
