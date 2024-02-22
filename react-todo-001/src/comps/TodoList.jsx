@@ -2,7 +2,7 @@
 // seq 와 todo 구성요소를 갖는 JSON 객체 데이터 3개를 포함하는 배열 
 // JSON : JavaScript Object Notation
 
-import { useState } from "react";
+// import { useState } from "react";
 
 // { 변수이름 : 값 }, { 변수1 : 값, 변수2 : 값 } 형태
 const todoListSample = [
@@ -14,9 +14,12 @@ const todoListSample = [
     { seq: 6, todo: "내일은 더 많이 비온다" },
 ]
 
-const TodoList = () => {
-    // todoListSample 데이터가 채워진 todoList 상태 변수배열 싲가하기
-    const [todoList, setTodoList] = useState(todoListSample);
+const TodoList = ({ todoList }) => {
+    // todoListSample 데이터가 채워진 todoList 상태 변수배열 시작하기
+    // const [todoList, setTodoList] = useState(todoListSample);
+
+    // 시나리오가 변경되어 TodoList 상태배열을 TodoMain 으로부터 
+    // props 로 전달받아 사용
 
     // *****    exec/array.js 참조  *****
     // todoList.forEach((todo) => console.log(todo));
