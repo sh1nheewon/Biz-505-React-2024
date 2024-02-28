@@ -29,4 +29,4 @@ npm init next-app [프로젝트]
 yarn create-next-app [프로젝트]
 ```
 - 명령 실행 후 옵션 선택하기
-![alt text](image.png)
+![명령 실행 후 옵션](images/image.png)
